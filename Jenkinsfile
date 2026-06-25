@@ -12,8 +12,8 @@ pipeline {
         stage('Deploy to Folder') {
             steps {
                 sh '''
-                sudo mkdir -p /opt/myapp
-                sudo cp -r * /opt/myapp/
+                mkdir -p /opt/myapp
+                cp -r * /opt/myapp/
                 '''
             }
         }
